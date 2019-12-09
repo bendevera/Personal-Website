@@ -1,0 +1,162 @@
+@media (max-width: 1170px) and (min-width: 768px) {
+	.info_result {
+		background-size: 50% auto;
+	}
+	.partners h2,
+	.contact_us h2,
+	.info_result h2,
+	.about_us h1,
+	.main_banner .text h2 {
+		font-size: 40px;
+		line-height: 60px;
+	}
+	.info_result h2 {
+		margin: 0;
+	}
+	.contact_us .btn.btn-default {
+		padding: 8px 20px;
+		font-size: 14px;
+	}
+	.contact_us .btn_group .btn + .btn {
+		margin-left: 10px;
+	}
+	.contact_us h2 {
+		margin: 9px 0 20px 0;
+	}
+	.contact_us .btn_group,
+	.contact_us p + p {
+		margin-top: 30px;
+	}
+	.subscription .form-control {
+		font-size: 16px;
+		
+		width: calc(100% - 220px);
+		margin-right: 10px;
+	}
+	.partners .logos a {
+		margin: 0;
+		padding: 0;
+		line-height: 100%;
+	}
+	.partners {
+		padding: 70px 0;
+	}
+}
+@media (max-width: 767px) {
+
+	.main_banner .text h2 {
+		font-size: 30px;
+		line-height: 40px;
+		margin: 20px 0;
+	}
+	.main_banner .text {
+		margin: 0;
+		padding: 30px 0;
+	}
+	.header .navbar-nav {
+		padding-top: 15px;
+	}
+	.header .navbar-nav li a {
+		padding: 10px 30px !important;
+	}
+	.main_banner .img img {
+		margin-top: 11px;
+		margin-bottom: 30px;
+	}
+	.about_us h1 {
+		font-size: 30px;
+		line-height: 40px;
+		margin: 10px 0 10px 0;
+	}
+	.info_result h2 {
+		font-size: 30px;
+		line-height: 40px;
+		margin: 10px 0 0 0;
+	}
+	.info_result h2 br{
+		display: none;
+	}
+	.partners {
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
+	.partners h2 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.partners p {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.partners .logos a {
+		margin: 10px;
+		line-height: 100%;
+	}
+	.partners .logos br{
+		display: none;
+	}
+	.subscription {
+		padding: 20px;
+		margin: 30px auto 0 auto;
+	}
+	.partners h2 {
+		font-size: 23px;
+		line-height: 30px;
+	}
+	.partners p {
+		font-size: 16px;
+		line-height: 27px;
+	}
+	.subscription form {
+		display: block;
+	}
+	.subscription .form-control {
+		background: transparent;
+		height: 60px;
+		font-size: 14px;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.contact_us h2 {
+		font-size: 30px;
+		line-height: 40px;
+		margin: 9px 0 20px 0;
+	}
+	.contact_us p {
+		font-size: 16px;
+		line-height: 28px;
+	}
+	.contact_us p + p {
+		margin-top: 30px;
+	}
+	.contact_us .btn_group {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.contact_us .btn_group .btn + .btn {
+		margin-left: 0;
+		margin-top: 16px;
+	}
+	.site_footer .social_links a {
+		width: 30px;
+		height: 30px;
+		font-size: 15px;
+		line-height: 30px;
+	}
+	.site_footer .social_links a + a {
+		margin-left: 3px;
+	}
+	.site_footer .logo {
+		display: block;
+		text-align: center;
+	}
+	.site_footer .logo img {
+		margin: 9px auto;
+	}
+	.site_footer .social_links {
+		float: left;
+	}
+	.site_footer {
+		padding: 15px 0;
+	}
+}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="blog">
+    <div class="container">
+        <h1>{{post.title}}</h1>
+        <p class="blog-date">Date: {{ post.date | prettytime }}</p>
+        {% for block in post.blocks %}
+            {% if block.type == 'text' %}
+                <p class="blog-text">{{block.data}}</p>
+            {% elif block.type == 'code' %}
+                <script src="{{block.data}}"></script>
+            {% elif block.type == 'image' %}
+                <img src="{{block.data}}" alt="" class="blog-image">
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="portfolio">
+    <div class="container">
+        <h1>my portfolio</h1>
+        <div id="github-projects">
+            <!-- {% for post in posts %}
+                <div class="col-xs-12 col-md-4">
+                    <a href="/blog/{{post.id}}" class="service_box wow fadeInLeft" data-wow-duration=".5s" data-wow-delay="0s">
+                        <h2>{{post.title}}</h2>
+                        {% if post.abstract %}
+                            <p>{{post.abstract}}</p>
+                        {% endif %}
+                        <p>{{ post.date | prettytime }}</p>
+                    </a>
+                </div>
+            {% endfor %} -->
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block js %}
+<script src="/static/js/github.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function() {
+    $("#github-projects").loadRepositories("bendevera");
+  });
+</script>
+{% endblock%}

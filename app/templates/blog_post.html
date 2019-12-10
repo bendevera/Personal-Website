@@ -7,10 +7,12 @@
         {% for block in post.blocks %}
             {% if block.type == 'text' %}
                 <p class="blog-text">{{block.data}}</p>
+            {% elif block.type == 'heading' %}
+                <h3>{{block.data}}</h3>
             {% elif block.type == 'code' %}
                 <script src="{{block.data}}"></script>
             {% elif block.type == 'image' %}
-                <img src="{{block.data}}" alt="" class="blog-image">
+                <img class="blog-image" src="{{block.data}}" alt="">
             {% endif %}
         {% endfor %}
     </div>

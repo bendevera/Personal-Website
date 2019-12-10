@@ -33,7 +33,12 @@ Block Types:
 1. text
 
 data - text of the block
-attribute - color for styling 
+attribute - css
+
+2. heading
+
+data - heading text of the block
+attribute - css
 
 2. image
 

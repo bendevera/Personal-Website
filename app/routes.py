@@ -18,3 +18,7 @@ def blog_post(id):
     if post is None:
         return redirect('index')
     return render_template('blog_post.html', post=post)
+
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')

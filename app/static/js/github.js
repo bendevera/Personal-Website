@@ -15,7 +15,7 @@ jQuery.fn.loadRepositories = function(username) {
         var list = $('<div class="github-container"/>');
         target.empty().append(list);
         $(repos).each(function() {
-            list.append('<div class="github-item"><a href="'+ this.url +'"><h4>' + this.full_name + 
+            list.append('<div class="github-item col-xs-12 col-md-12"><a style="text-decoration:none;" target="_blank" href="'+ this.url +'"><h4 class="underline">' + this.full_name + 
             '</h4></a><p>' + this.description + '</p>' + '<p class="portfolio-language">' + 
             this.language + '</p></div>');
         });

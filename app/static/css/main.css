@@ -176,7 +176,6 @@ h1,h2,h3,h4,h5,h6{
 	color: #fff;
 }
 .portfolio {
-	background-image: url('../images/dot_bg.png');
 	border-top: 2px solid #46409c;
 	background-position: top center;
 	background-size: cover;
@@ -191,6 +190,13 @@ h1,h2,h3,h4,h5,h6{
 	padding: 0;
 	line-height: 24px;
 }
+.portfolio h4 {
+	color: #46409c;
+	font-weight: 700;
+	text-decoration: none;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
 .portfolio h1 {
 	font-weight: 700;
 	font-size: 50px;
@@ -198,6 +204,47 @@ h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
 	color: #fff;
+}
+.portfolio-language {
+	color: #99A2A9;
+	font-size: .6em;
+}
+#github-projects {
+	margin-left: 0;
+	margin-top: 15px;
+	border-left: 6px solid #99A2A9;
+}
+.github-item:hover {
+	background-color: #99A2A9;
+	color: #000;
+}
+.github-item:hover .portfolio-language {
+	color: #000;
+}
+.underline {
+	display: inline;
+	position: relative;
+	overflow: hidden;
+}
+.underline:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	width: 0;
+	bottom: -5px;
+	background: #46409c;
+	height: 4px;
+	transition-property: width;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+left: 0;
+right: auto;
+width: 100%;
 }
 .blog {
 	background-image: url('../images/dot_bg.png');

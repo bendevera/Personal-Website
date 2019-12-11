@@ -76,7 +76,11 @@ h1,h2,h3,h4,h5,h6{
 	color: #fff !important;
 }
 .main_banner {
-	background: #000000;
+	background-image: url('../images/personal.png');
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000000;
 	margin: 0;
 	padding: 0;
 }
@@ -530,6 +534,11 @@ width: 100%;
 	margin:0;
 	padding:0;
 	width:100%;
+}
+.contact-input {
+	background-color: black;
+	color: white;
+	margin-bottom: 2%;
 }
 /* .contact_us .img_map {
 	display: block;

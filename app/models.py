@@ -27,6 +27,12 @@ class Block(db.Model):
     order = Column(Integer)
     post_id = Column(Integer, ForeignKey('posts.id'))
 
+class Contact(db.Model):
+    __tablename__ = "contacts"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    email = Column(String)
+    message = Column(String)
+
 '''
 Block Types:
 

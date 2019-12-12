@@ -1,15 +1,16 @@
 from app import app, db
 from flask import render_template, redirect, request, url_for
 from app.models import Post, Contact
+from sqlalchemy import desc 
 
 @app.route('/')
 def index():
-    posts = Post.query.all()[:3]
+    posts = Post.query.order_by(desc(Post.date)).all()[:3]
     return render_template('index.html', posts=posts)
 
 @app.route('/blog')
 def blog():
-    posts = Post.query.all()
+    posts = Post.query.order_by(desc(Post.date)).all()
     return render_template('blog.html', posts=posts)
 
 @app.route('/blog/<id>')

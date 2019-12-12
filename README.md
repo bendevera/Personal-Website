@@ -1,3 +1,2 @@
 # Personal-Website
-my personal website 
-*not yet deployed
+My personal website codebase. Deployed at bendevera.com 

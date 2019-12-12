@@ -14,6 +14,13 @@
                 <script src="{{block.data}}"></script>
             {% elif block.type == 'image' %}
                 <img class="blog-image" src="{{block.data}}" alt="">
+            {% elif block.type == 'list' %}
+                {% set item_list = block.split(';') %}
+                <ul>
+                {% for item in item_list %}
+                    <li>{{item}}</li>
+                {% endfor %}
+                </ul>
             {% endif %}
         {% endfor %}
     </div>

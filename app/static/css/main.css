@@ -251,7 +251,7 @@ right: auto;
 width: 100%;
 }
 .blog {
-	background-image: url('../images/dot_bg.png');
+	background-image: url('../images/background-custom5.png');
 	border-top: 2px solid #46409c;
 	background-position: top center;
 	background-size: cover;
@@ -781,3 +781,63 @@ body .gist .pl-mdi {
 body .gist .gist-meta {
 	display: none;
   }
+
+/* Spicing things up  */
+/*=======Button 6============= */
+.btn6 {
+	padding: 15px 100px;
+	margin:10px 4px;
+	color: #46409c;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+	display:inline-block;
+	font-size: 1em;
+	background-color: transparent;
+}
+.btn6{
+	border: 2px solid transparent; 
+	-webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+	transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+}
+.btn6::before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	bottom:0px;
+	z-index:-1;
+	width: 0%;
+	height:1px;
+	background: #46409c;
+	box-shadow: inset 0px 0px 0px #46409c;
+	display: block;
+	-webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+	transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+}
+.btn6:hover::before {
+	width:100%;
+}
+.btn6::after {
+	content: '';
+	position: absolute;
+	right: 0px;
+	top:0px;
+	z-index:-1;
+	width: 0%;
+	height:1px;
+	background: #46409c;
+	-webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+	transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+.btn6:hover::after {
+	width:100%;
+}
+.btn6:hover{
+	border-left: 2px solid #46409c;
+	border-right: 2px solid #46409c;
+	text-decoration: none;
+	color: #46409c;
+	background-color: transparent;
+}

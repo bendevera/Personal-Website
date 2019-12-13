@@ -35,3 +35,7 @@ def contact():
     except Exception as e:
         print(e)
     return redirect(url_for('index'))
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return redirect(url_for('index'))

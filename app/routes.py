@@ -1,5 +1,5 @@
 from app import app, db
-from flask import render_template, redirect, request, url_for
+from flask import render_template, redirect, request, url_for, send_from_directory
 from app.models import Post, Contact
 from sqlalchemy import desc 
 
@@ -36,6 +36,12 @@ def contact():
         print(e)
     return redirect(url_for('index'))
 
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
+
 @app.errorhandler(404)
 def page_not_found(e):
     return redirect(url_for('index'))
+

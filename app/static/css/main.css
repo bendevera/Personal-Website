@@ -350,6 +350,14 @@ width: 100%;
 	padding: 0;
 	color:#fff;
 }
+.info_result h3 {
+	color: #46409c;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	line-height: 24px;
+}
 .info_result p {
 	margin: 0;
 	padding: 0;
@@ -807,7 +815,7 @@ body .gist .gist-meta {
 	position: absolute;
 	left: 0px;
 	bottom:0px;
-	z-index:-1;
+	z-index:1;
 	width: 0%;
 	height:1px;
 	background: #46409c;
@@ -824,7 +832,7 @@ body .gist .gist-meta {
 	position: absolute;
 	right: 0px;
 	top:0px;
-	z-index:-1;
+	z-index:1;
 	width: 0%;
 	height:1px;
 	background: #46409c;

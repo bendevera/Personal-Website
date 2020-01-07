@@ -18,6 +18,7 @@ def blog_post(id):
     post = Post.query.filter_by(id=id).first()
     if post is None:
         return redirect(url_for('index'))
+    post.blocks.sort(key=lambda x: x.order)
     return render_template('blog_post.html', post=post)
 
 @app.route('/portfolio')

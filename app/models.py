@@ -46,13 +46,18 @@ attribute - css
 data - heading text of the block
 attribute - css
 
-2. image
+3. image
 
 data - path for image file (url or local file path)
 attribute - css for specific styling
 
-3. code
+4. code
 
 data - text to be styled like code
 attribuet - ignored
+
+5. link
+
+data - URL
+attribute - text for a tag
 '''

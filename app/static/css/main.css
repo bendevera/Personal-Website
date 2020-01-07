@@ -260,7 +260,7 @@ width: 100%;
 }
 .blog h3 {
 	color: #46409c;
-	font-size: 18px;
+	font-size: 25px;
 	font-weight: 500;
 	margin: 0;
 	padding: 0;
@@ -282,6 +282,11 @@ width: 100%;
 	display: block;
 	margin: auto;
 	width: 50%;
+}
+.blog-link {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #46409c;
 }
 .service_box {
 	display: block;

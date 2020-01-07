@@ -9,7 +9,7 @@
             {% if block.type == 'text' %}
                 <p class="blog-text">{{block.data}}</p>
             {% elif block.type == 'heading' %}
-                <h3>{{block.data}}</h3>
+                <h3 class="blog-heading">{{block.data}}</h3>
             {% elif block.type == 'code' %}
                 <script src="{{block.data}}"></script>
             {% elif block.type == 'image' %}
@@ -22,7 +22,7 @@
                 {% endfor %}
                 </ul>
             {% elif block.type == 'link' %}
-                <a href="{{block.data}}" class="blog-link">{{block.attribute}}</a>
+                <a href="{{block.data}}" class="blog-link">{{block.attribute}}</a><br>
             {% endif %}
         {% endfor %}
         <div class="sharethis-inline-share-buttons my-3"></div>

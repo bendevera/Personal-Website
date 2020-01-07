@@ -21,6 +21,8 @@
                     <li>{{item}}</li>
                 {% endfor %}
                 </ul>
+            {% elif block.type == 'link' %}
+                <a href="{{block.data}}" class="blog-link">{{block.attribute}}</a>
             {% endif %}
         {% endfor %}
         <div class="sharethis-inline-share-buttons my-3"></div>

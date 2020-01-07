@@ -1,30 +1,30 @@
-from app import APP, db
+from app import app, db
 from flask import render_template, redirect, request, url_for, send_from_directory
 from app.models import Post, Contact
 from sqlalchemy import desc 
 
-@APP.route('/')
+@app.route('/')
 def index():
     posts = Post.query.order_by(desc(Post.date)).all()[:3]
     return render_template('index.html', posts=posts)
 
-@APP.route('/blog')
+@app.route('/blog')
 def blog():
     posts = Post.query.order_by(desc(Post.date)).all()
     return render_template('blog.html', posts=posts)
 
-@APP.route('/blog/<id>')
+@app.route('/blog/<id>')
 def blog_post(id):
     post = Post.query.filter_by(id=id).first()
     if post is None:
         return redirect(url_for('index'))
     return render_template('blog_post.html', post=post)
 
-@APP.route('/portfolio')
+@app.route('/portfolio')
 def portfolio():
     return render_template('portfolio.html')
 
-@APP.route('/contact', methods=["POST"])
+@app.route('/contact', methods=["POST"])
 def contact():
     content = request.form 
     print(content)
@@ -36,12 +36,12 @@ def contact():
         print(e)
     return redirect(url_for('index'))
 
-@APP.route('/robots.txt')
-@APP.route('/sitemap.xml')
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
 
-@APP.errorhandler(404)
+@app.errorhandler(404)
 def page_not_found(e):
     return redirect(url_for('index'))
 

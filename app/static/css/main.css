@@ -261,6 +261,29 @@ width: 100%;
 	background-repeat: no-repeat;
 	padding: 70px 0;
 }
+.blog-post {
+	border-top: 2px solid #46409c;
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 70px 0;
+}
+.blog-post h3 {
+	color: #46409c;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 3% 0 3% 0;
+	padding: 0;
+	line-height: 24px;
+}
+.blog-post h1 {
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 76px;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
 .blog h3 {
 	color: #46409c;
 	font-size: 25px;
